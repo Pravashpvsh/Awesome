@@ -10,7 +10,42 @@
     background-position: center;
     position: relative;
     overflow-x: hidden;
-
-
-
 }
+.highway
+{
+    height: 200px;
+    width: 500%;
+    display: block;
+    background-image:url(/img/road.jpg);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    background-repeat: repeat-x;
+    animation:highway 5s linear infinite;
+}
+@keyframes highway {
+100%{
+    transform: translate(-3400px);
+}
+}
+.city
+{
+    height: 250px;
+    width: 500%;
+    display: block;
+    background-image:url(/img/city.png);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    background-repeat: repeat-x;
+    animation:city 5s linear infinite;
+}
+@keyframes city {
+    100%{
+        transform: translate(-3400px);
+    }}
+    
